@@ -1,0 +1,40 @@
+@import "./utils"; 
+
+.h2__index
+{
+    text-align: center;
+}
+.p__index
+{
+    text-align: center;
+    padding : 0; 
+}
+
+.menu
+{
+    display: flex;
+    flex-direction: row;
+    align-items : center; 
+    justify-content: space-around;
+    &__number
+    {
+        margin-left: 10%;
+        margin-right: 5%;
+        width: 30px;
+        height: 30px;
+        background-color: $primary-color;
+        border-radius: 50%;
+        text-align: center; 
+        color : white; 
+        @include font-roboto; 
+    }
+        &__text
+        {
+           flex : 1; 
+           &--p
+           {
+               margin-top : 6px; 
+           }
+        }
+
+}

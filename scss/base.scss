@@ -1,0 +1,47 @@
+ @import "./utils"; 
+
+@font-face {
+    font-family: "Shrikhand";
+    src: url("../font/shrikhand/Shrikhand-Regular.ttf");
+    src: url("../font/shrikhand/Shrikhand-Regular.oet");
+    src: url("../font/shrikhand/Shrikhand-Regular.otf");
+    src: url("../font/shrikhand/Shrikhand-Regular.svg");
+    src: url("../font/shrikhand/Shrikhand-Regular.woff");
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("../font/roboto/Roboto-Regular.eot");
+    src: url("../font/roboto/Roboto-Regular.ttf");
+    src: url("../font/roboto/Roboto-Regular.woff");
+    src: url("../font/roboto/Roboto-Regular.svg");
+    src: url("../font/roboto/Roboto-Regular.otf");
+}
+
+body
+{
+    margin : 0; 
+}
+
+h2{
+     
+    font-size: 22px;
+    margin : 10%; 
+    @include font-roboto; 
+}
+
+img
+{
+    width : 100%; 
+}
+p
+{
+    font-size: 15px;
+    @include font-roboto; 
+}
+
+.form__btn
+{
+    @include btn; 
+}
+
+
