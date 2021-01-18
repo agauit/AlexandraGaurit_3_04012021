@@ -21,7 +21,11 @@ body
     margin : 0; 
     
 }
-
+h1{
+    @include title;
+    padding-top: 30px;
+    padding-left: 22px;
+}
 h2{
      
     font-size: 22px;
@@ -42,6 +46,7 @@ p
     font-size: 15px;
     @include font-roboto; 
 }
+
 
 
 
