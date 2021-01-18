@@ -1,0 +1,14 @@
+{
+  "name": "p3_gaurit_alexandra",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/style.scss:./scss/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

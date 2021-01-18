@@ -1,20 +1,32 @@
-.header__logo {
+.header{
+
+  border-bottom : 3px solid  darken($fourth-color, 10%);
+
+ 
+  &__logo {
     width: 150px;
     margin-left: 26%;
     margin-top: 5%;
     margin-bottom: 5%;
-  }
+}
+}
+
   footer
   {
-    background-color: black;
-    color : white; 
+    background-color: #232623;
+    line-height: 0px;
+    padding-bottom: 10px;
     
   }
+li{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
   nav ul{
     list-style: none;
     
   }
   a{
     text-decoration: none;
-    color : white; 
   }
