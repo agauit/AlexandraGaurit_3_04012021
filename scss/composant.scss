@@ -17,16 +17,15 @@ input
     width: 100%;
     height: 45px;
     border: none;
-    background-color: darken($fourth-color,5%) ;
-    text-align : center; 
+    background-color: darken($fourth-color,5%);
+    text-align: center;
 }
 .fa-map-marker-alt
 {
     position: absolute;
-    bottom: 475.483px;
-    left: 100px;
+    top: 15%;
+    left: 31%;
     font-size: 14px;
-    top: 77.517px;
 }
 .fa-heart
 {
@@ -44,28 +43,33 @@ input
 .nouveau
 {
     position: absolute;
-    right: 262.25px;
-    left: 221px;
-    top: 720.517px;
-    width: 70px;
-    height: 27px;
-    margin-left: -20px;
-    margin-right: 0px;
+    width: 30%;
+    height: 44px;
     background-color: $tertiary-color;
     color : darken($tertiary-color, 40%);
-    padding-top: 0px;
-    bottom: -189.517px;
-    padding-bottom: 18px;
-    height: 27px;
-    padding-left: 17px;
-    padding-right: 6px;
     border-radius: 5px;
-    margin-top: -8px;
+    top: 5%;
+    left: 66%;
+    text-align: center;
 }
 
 .form__commande
 {
-    margin-left: 100px;
+    margin-left : 0;
     padding-right: 25px;
     padding-left: 25px;
+}
+.fa-arrow-left
+{
+    font-size: 20px;
+}
+.img__size
+{
+   margin : 0;
+   height: 200px;
+   overflow: hidden;
+}
+.coeur
+{
+    margin-top: 100%;
 }

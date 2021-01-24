@@ -5,20 +5,42 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>OhMyFood-La palette du goût</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"/>
+    <link rel="stylesheet" type="text/css" href="scss/style.css">
 </head>
 <body>
     
     <header>
-        <img src="images/logo/ohmyfood.png" alt="logo">
+        <div class="header">
+            <div>
+                <i class="fas fa-arrow-left"></i>
+            </div>
+            <div>
+                <img class="header__logo" src="images/logo/ohmyfood.png" alt="logo">
+            </div>
+            </div>
     </header>
-        
-<img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="la palette du goût">
 
-<section>
+<main>   
+
+    <figure class="img__size">
+        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="la palette du goût">
+    </figure>
+
+
+<section class="section">
    
-    <h1>La palette du goût</h1>
+    <div class="titre1">
+        <div>
+            <h1>La palette du goût</h1>
+        </div>
+        <div>
+            <i class="far fa-heart coeur"></i>
+        </div>
+    </div>
+    
     <article>
-    <h2>ENTREES</h2>
+    <h2 class="titre2">ENTREES</h2>
 
 
     <div class="boite">
@@ -55,47 +77,104 @@
     </div>
 
     <div class="boite__prix">
-    <p>20€</p>
+        <p>20€</p>
     </div>
 
     </div>
 
 </article>
 <article>
-    <h2>PLATS</h2>
+    <h2 class="titre2">PLATS</h2>
 
-    <h3>Filets de boeuf aux herbes</h3>
-    <p>Accompagné de sa ribambelle de légume</p>
-    <p>40€</p>
+<div class="boite">
+    
+    <div class="boite__menu">    
+        <h3>Filets de boeuf aux herbes</h3>
+        <p>Accompagné de sa ribambelle de légume</p>
+    </div>
 
-    <h3>Parmentier de queue de boeuf</h3>
-    <p>A la truffe noire sur sa purée de panais</p>
+    <div class="boite__prix">
+        <p>40€</p>
+    </div>
+
+</div>
+
+<div class="boite"> 
+
+    <div class="boite__menu">
+        <h3>Parmentier de queue de boeuf</h3>
+        <p>A la truffe noire sur sa purée de panais</p>
+    </div>
+    
+    <div class="boite__prix">
     <p>35€</p>
+    </div>
 
-    <h3>Filet de Turbot</h3>
-    <p>Aux agrumes</p>
-    <p>44€</p>
+</div>
+
+<div class="boite">
+
+    <div class="boite__menu">
+        <h3>Filet de Turbot</h3>
+        <p>Aux agrumes</p>
+    </div>
+
+    <div class="boite__prix">
+        <p>44€</p>
+    </div>
+
+</div>
+
 </article>
 
 <article>
-    <h2>DESSERTS</h2>
+    <h2 class="titre2">DESSERTS</h2>
 
-    <h3>Paris Brest</h3>
-    <p>Revisité</p>
-    <p>18€</p>
+<div class="boite">
 
-    <h3>Macaron au chocolat d'exception</h3>
-    <p>Et glace à la vanille de Madagascar</p>
-    <p>22€</p>
+    <div class="boite__menu">
+        <h3>Paris Brest</h3>
+        <p>Revisité</p>
+    </div>
 
-    <h3>Mousse au chocolat</h3>
-    <p>Au piment à la truffe noire</p>
-    <p>23€</p>
+    <div class="boite__prix">
+        <p>18€</p>
+    </div>
+
+</div>    
+
+<div class="boite">
+
+    <div class="boite__menu">
+        <h3>Macaron au chocolat d'exception</h3>
+        <p>Et glace à la vanille de Madagascar</p>
+    </div>
+
+    <div class="boite__prix">
+        <p>22€</p>
+    </div>
+
+</div>
+
+<div class="boite">
+
+    <div class="boite__menu">
+        <h3>Mousse au chocolat</h3>
+        <p>Au piment à la truffe noire</p>
+    </div>
+
+    <div class="boite__prix">
+        <p>23€</p>
+    </div>
+
+</div>
 </article>
 
-<p>Commander</p>
+<button type="submit" class="form__btn form__commande">Commander</button>
 
 </section>
+
+</main>  
 
 <footer>
 
