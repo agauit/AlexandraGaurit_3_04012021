@@ -36,7 +36,6 @@ h2 {
   font-family: "Roboto";
   padding-right: 0px;
 }
-
 h3 {
   font-family: "Roboto";
   font-size: 18px;
@@ -78,7 +77,7 @@ p {
     font-size: 20px;
     width: 20%;
     height: 60px;
-    margin-left: 42%;
+    margin-left: 40%;
     margin-top: 10%;
   }
 }
@@ -113,13 +112,33 @@ input {
   background-color: #e5e5e5;
   text-align: center;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  input {
+    height: 70px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1650px) {
+  input {
+    height: 80px;
+  }
+}
 
-@media screen and (max-width: 767px) {
+.fa-map-marker-alt {
+  position: absolute;
+  top: 33%;
+  left: 31%;
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .fa-map-marker-alt {
-    position: absolute;
-    top: 15%;
-    left: 31%;
-    font-size: 14px;
+    top: 41%;
+    left: 41%;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1650px) {
+  .fa-map-marker-alt {
+    top: 42%;
+    left: 43%;
   }
 }
 
@@ -141,18 +160,16 @@ input {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .nouveau {
-    position: absolute;
-    width: 30%;
-    height: 44px;
-    background-color: #99E2D0;
-    color: #278870;
-    border-radius: 5px;
-    top: 5%;
-    left: 66%;
-    text-align: center;
-  }
+.nouveau {
+  position: absolute;
+  width: 30%;
+  height: 44px;
+  background-color: #99E2D0;
+  color: #278870;
+  border-radius: 5px;
+  top: 5%;
+  left: 66%;
+  text-align: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -361,110 +378,169 @@ main {
   border-bottom: 3px solid #d9d9d9;
   text-align: center;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .en-tete {
+    border: none;
+    margin-top: 4%;
+    margin-bottom: 2%;
+  }
+}
 
 .logo {
   margin-left: 0px;
+  width: 50%;
+}
+@media screen and (min-width: 1025px) and (max-width: 1650px) {
+  .logo {
+    width: 30%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
 }
 
-@media screen and (max-width: 767px) {
+.title {
+  text-align: center;
+  margin-bottom: 4%;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .title {
-    text-align: center;
-    margin-bottom: 4%;
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1650px) {
+  .title {
+    margin-top: 4%;
+    font-size: 35px;
   }
 }
 
-@media screen and (max-width: 767px) {
+.paragraphe {
+  text-align: center;
+  padding: 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .paragraphe {
-    text-align: center;
-    padding: 0;
+    font-size: 18px;
+    margin-bottom: -2%;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1650px) {
+  .paragraphe {
+    font-size: 20px;
+    margin-bottom: -4%;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .menu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    margin-bottom: 10px;
-  }
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
 }
-@media screen and (max-width: 767px) {
-  .menu__number {
-    margin-left: 10px;
-    width: 30px;
-    height: 30px;
-    background-color: #9356DC;
-    border-radius: 50%;
-    text-align: center;
-    color: white;
-    font-family: "Roboto";
-    margin-right: 0px;
-    position: absolute;
-    left: 23px;
-  }
+.menu__number {
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #9356DC;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  font-family: "Roboto";
+  margin-right: 0px;
+  position: absolute;
+  left: 23px;
 }
-@media screen and (max-width: 767px) {
-  .menu__number--text {
-    padding-top: 6px;
-    margin: 0;
-  }
+.menu__number--text {
+  padding-top: 6px;
+  margin: 0;
 }
-@media screen and (max-width: 767px) {
-  .menu__conteneur {
-    background-color: #F2F2F2;
-    display: flex;
-    align-items: center;
-    margin-left: 35px;
-    padding-left: 20px;
-    padding-right: 50px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 20px;
-  }
+.menu__conteneur {
+  background-color: #F2F2F2;
+  display: flex;
+  align-items: center;
+  margin-left: 35px;
+  padding-left: 20px;
+  padding-right: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 20px;
 }
-@media screen and (max-width: 767px) {
-  .menu__icone {
-    padding-right: 10px;
-  }
+.menu__icone {
+  padding-right: 10px;
 }
 
-@media screen and (max-width: 767px) {
-  .input {
-    position: relative;
-    text-align: center;
-  }
+.input {
+  position: relative;
+  text-align: center;
 }
 
-@media screen and (max-width: 767px) {
+.restaurant {
+  margin-bottom: 40px;
+  position: relative;
+  border: 1px solid #F2F2F2;
+  box-shadow: 0px 2px 20px -10px;
+  border-radius: 20px;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+@media screen and (min-width: 1025px) and (max-width: 1650px) {
   .restaurant {
-    margin-bottom: 40px;
-    position: relative;
-    border: 1px solid #F2F2F2;
-    box-shadow: 0px 2px 20px -10px;
-    border-radius: 20px;
-    margin-right: 5%;
-    margin-left: 5%;
+    width: 100%;
   }
 }
-@media screen and (max-width: 767px) {
+.restaurant__img {
+  width: 100%;
+  height: 150px;
+  margin: 0;
+  overflow: hidden;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0px -6px 20px -10px;
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .restaurant__img {
+    height: 250px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1650px) {
   .restaurant__img {
     width: 100%;
-    height: 150px;
-    margin: 0;
-    overflow: hidden;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    box-shadow: 0px -6px 20px -10px;
+    height: 200px;
   }
 }
+.restaurant__conteneur {
+  line-height: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.groupe-restaurant {
+  display: flex;
+  flex-direction: row;
+}
 @media screen and (max-width: 767px) {
-  .restaurant__conteneur {
-    line-height: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+  .groupe-restaurant {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .groupe-restaurant {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1650px) {
+  .titre-index {
+    margin: 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    font-size: 30px;
   }
 }
 

@@ -36,6 +36,8 @@ h2{
     font-size: 22px;
     margin : 10%; 
     @include font-roboto;padding-right: 0px;
+    @include ordi
+
 }
 h3{
     @include font-roboto; 

@@ -16,7 +16,7 @@
         font-size: 20px;
         width: 20%;
         height: 60px;
-        margin-left: 42%;
+        margin-left: 40%;
         margin-top: 10%;
     }
 }
@@ -52,16 +52,33 @@ input
     border: none;
     background-color: darken($fourth-color,5%);
     text-align: center;
+    @include tablette{
+        height: 70px;
+    }
+    @include ordi
+    {
+        height: 80px;
+
+    }
 
 }
 .fa-map-marker-alt
 {
-    @include mobile
-    {
+
     position: absolute;
-    top: 15%;
+    top: 33%;
     left: 31%;
     font-size: 14px;
+
+    @include tablette
+    {
+        top: 41%;
+        left: 41%;
+    }
+    @include ordi 
+    {
+        top: 42%;
+        left: 43%;
     }
 }
 .fa-heart
@@ -86,8 +103,7 @@ input
 }
 .nouveau
 {
-    @include mobile
-    {
+    
     position: absolute;
     width: 30%;
     height: 44px;
@@ -97,7 +113,8 @@ input
     top: 5%;
     left: 66%;
     text-align: center;
-    }
+  
+
 }
 
 .fa-arrow-left
