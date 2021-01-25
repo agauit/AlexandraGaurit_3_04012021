@@ -20,7 +20,9 @@ $fourth-color : #F2F2F2;
     border: none;
     box-shadow: 2px 9px 5px -4px darken($fourth-color,10%);
     margin-top: 5%; 
-    width: 53%;
+    width: 30%;
+    margin-left: 35%;
+    margin-bottom: 7%;
 }
 @mixin titre2
 {
@@ -31,6 +33,38 @@ $fourth-color : #F2F2F2;
     padding-bottom: 1%;
     border-bottom : 3px solid $tertiary-color;
 }
+
+$breakpoint :
+(
+    mobile : 767px,
+    tablet : 1024px,
+    desktop : 1650px,
+);
+
+@mixin mobile 
+{
+    @media screen and (max-width: map-get($breakpoint, mobile))
+    {
+        @content;
+    }
+}
+
+@mixin tablette 
+{
+    @media screen and (min-width:768px) and (max-width: map-get($breakpoint, tablet))
+    {
+        @content;
+    }
+}
+
+@mixin ordi 
+{
+    @media screen and (min-width: 1025px) and (max-width: map-get($breakpoint, desktop))
+    {
+        @content;
+    }
+}
+
 
 @mixin background
 {

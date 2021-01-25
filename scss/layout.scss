@@ -1,19 +1,40 @@
 .header{
 
-  
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-right: 35%;
-  margin-top: 3%;
-  margin-bottom: 2%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    @include ordi
+  {
+    margin-right: 20%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  @include tablette
+  {
+    
+    padding-right: 16%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  @include mobile
+  {
+    margin-right: 35%;
+    margin-top: 3%;
+    margin-bottom: 2%;
+  }
+
 
   &__logo {
+    @include mobile
+    {
     width: 150px;
     margin-left: 26%;
     margin-top: 5%;
     margin-bottom: 5%;
+    }
 
 }
 }
@@ -25,10 +46,13 @@
     padding-bottom: 10px;
     
   }
+
 li{
+
   display: flex;
   flex-direction: row;
   align-items: center;
+
 }
   nav ul{
     list-style: none;
@@ -37,22 +61,28 @@ li{
   a{
     text-decoration: none;
   }
+
 .section
 {
+  background-color: $fourth-color;
   position: relative;
   z-index: 1;
-  border-radius: 47px;
   top: -61px;
   left: 0px;
-  background-color: $fourth-color;
+  border-radius: 47px;
+  @include tablette
+  {
+    border-radius: 100px;
+  }
 }
+
 .boite
 {
+ 
   background-color: white;
   border-radius: 20px;
   padding-left: 10px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 5%;
   padding-top: 5px;
   display: flex;
   flex-direction: row;
@@ -60,35 +90,70 @@ li{
   padding-top: 0px;
   width: 85%;
   height: 90px;
-  margin-left: 13px;
   justify-content: space-between;
   margin-bottom: 20px;
+
+  @include tablette{
+    margin-left: 6%;
+    padding-right: 2%;
+  }
+  @include ordi
+  {
+    margin-left: 12%;
+    width: 27%;
+    padding-right: 2%;
+    padding-left: 2%;
+  }
   &__menu
   {
+    @include mobile
+    {
     line-height: 18px;
     padding-right: 15px;
     padding-left: 10px;
+    }
   }
   &__prix
   {
+    @include mobile
+    {
     margin: 0;
     padding-top: 42px;
     padding-right: 20px;
+    }
   }
 
 }
 main
 {
   background-color: $fourth-color;
+  border-radius: 20px;
 }
 .titre1
 {
+ 
   display: flex;
   align-items : center;
   justify-content: space-around;
   flex-wrap: wrap;
+
 }
 .titre2
 {
   @include titre2;
+  margin : 0;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-bottom: 5%;
+}
+.groupe
+{
+  display: flex;
+  flex-direction: row;
+  @include mobile{
+    flex-direction: column;
+  }
+  @include tablette{
+    flex-direction: column;
+  }
 }

@@ -19,12 +19,17 @@
 body
 {
     margin : 0; 
+    overflow-x: hidden;
     
 }
 h1{
     @include title;
     padding-top: 30px;
     padding-left: 22px;
+    @include ordi
+    {
+        font-size: 35px;
+    }
 }
 h2{
      
