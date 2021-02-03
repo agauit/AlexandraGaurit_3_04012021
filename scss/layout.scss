@@ -92,6 +92,7 @@ li{
   height: 90px;
   justify-content: space-between;
   margin-bottom: 20px;
+  animation : 1.5s part ease-in-out;
 
   @include tablette{
     margin-left: 6%;
@@ -104,8 +105,21 @@ li{
     padding-right: 2%;
     padding-left: 2%;
   }
+  &__1
+  {
+    animation : 2s part ease-in-out;
+  }
+  &__2
+  {
+    animation : 2.5s part ease-in-out;
+  }
+  &__3
+  {
+    animation : 3s part ease-in-out;
+  }
   &__menu
   {
+    text-overflow: ellipsis;
     @include mobile
     {
     line-height: 18px;
@@ -123,6 +137,22 @@ li{
     }
   }
 
+}
+
+@keyframes part
+{
+  0%
+  {
+    opacity :0;
+    
+    
+  }
+   100%
+    {
+      opacity : 1;
+      
+
+    }
 }
 main
 {

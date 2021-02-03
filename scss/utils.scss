@@ -23,6 +23,11 @@ $fourth-color : #F2F2F2;
     width: 30%;
     margin-left: 35%;
     margin-bottom: 7%;
+    &:hover{
+        opacity:.7;
+        transition : opacity 1s;
+        box-shadow: 2px 9px 5px -4px darken($fourth-color,20%);
+    }
 }
 @mixin titre2
 {
