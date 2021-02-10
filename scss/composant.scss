@@ -81,10 +81,48 @@ input
         left: 43%;
     }
 }
-.fa-heart
+.animation-container
 {
-    font-size: 25px;
+    position : relative;
 }
+.coeur{
+    position : absolute; 
+    z-index : 1;
+}
+.little-heart
+{
+    position: absolute;
+    font-size: 40px;
+    text-align: center;
+    bottom: -38px;
+    color : $fourth-color;
+}
+.animation-container:hover .little-heart
+{
+    animation : .5s coeur ease-in-out;
+    background:-webkit-linear-gradient($primary-color, $secondary-color);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+    font-weight: bold;
+}
+
+@keyframes coeur
+{
+    0%
+    {
+       transform: scale(0);
+       transform:translateY(15px);
+       opacity : 0;
+    }
+    100%
+    {
+        transform : scale(1);
+        transform:translateY(0px);
+        opacity: 1;
+    }
+}
+
 .fa-utensils 
 {
     @include mobile

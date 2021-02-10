@@ -100,10 +100,8 @@ li{
   }
   @include ordi
   {
-    margin-left: 12%;
-    width: 27%;
-    padding-right: 2%;
-    padding-left: 2%;
+    width: 100%;
+    padding-right: 5%;
   }
   &__1
   {
@@ -138,18 +136,23 @@ li{
   }
 
 }
+.boite__prix:hover{
+ margin-right : 5%;
+}
 
 @keyframes part
 {
   0%
   {
-    opacity :0;
+    transform : translateY(20px);
+    opacity: 0;
     
     
   }
    100%
     {
-      opacity : 1;
+      transform: translateY(0);
+      opacity: 1;
       
 
     }
@@ -185,5 +188,164 @@ main
   }
   @include tablette{
     flex-direction: column;
+  }
+}
+.box-column
+{
+  @include ordi;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-right: 4%;
+  @include mobile
+  {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+  }
+
+}
+.box-flex
+{
+  @include ordi;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.load
+{
+  display: flex;
+  flex-direction: row;
+  margin-right: 2%;
+  padding-left : 40%;
+  margin-top : 20%;
+
+&__1
+{
+border : 2px solid $primary-color;
+width : 50px;
+height : 50px;
+border-top-right-radius: 10px;
+  background-color :$primary-color;
+animation : 1s loading  ease-in-out;
+animation-fill-mode: forwards;
+margin-right: 10%;
+}
+&__2
+{
+border : 2px solid $secondary-color;
+border-top-right-radius: 10px;
+width : 50px;
+height : 50px;
+  background-color : $secondary-color;
+  animation : 1s loading  ease-in-out;
+  animation-delay : 1s;
+  animation-fill-mode: forwards;
+  margin-right: 10%;
+}
+&__3
+{
+border : 2px solid $tertiary-color;
+border-top-right-radius: 10px;
+width : 50px;
+height : 50px;
+  background-color : $tertiary-color;
+  animation : 1s loading  ease-in-out;
+  animation-delay : 2s;
+  animation-fill-mode: forwards;
+  margin-right: 10%;
+}
+}
+
+.index
+  {
+    animation: 3s accueil ease-in-out;
+    margin-top : -23%;
+   }
+
+
+   @keyframes accueil
+   {
+     0%
+     {
+       opacity: 0;
+     }
+     50%
+     {
+       opacity: 0;
+     }
+     90%
+     {
+       opacity: 0;
+     }
+     100%
+     {
+       opacity: 1;
+     }
+   }
+
+
+@keyframes loading
+{
+0%
+{
+  transform : rotate(0deg);
+  opacity: 1;
+
+}
+100%
+{
+  transform : rotate(360deg);
+  opacity: 0;
+}
+}
+
+.valid
+{
+  background-color: $tertiary-color;
+  width: 10px;
+  height: 10px;
+}
+valid:hover
+{
+  animation : 2s validation ease-in-out;
+}
+
+@keyframes validation 
+{
+  0%
+  {
+  opacity: 0;
+  transform : scaleX(0);
+  }
+  100%
+  {
+    opacity:1;
+    transform:scaleX(1);
+}
+}
+.animation-right
+{
+
+  width: 22%;
+  margin-right: -13px;
+  height: 93px;
+  
+}
+.animation-right:hover
+{
+  animation : 2s greenbloc ease-in-out;
+  background-color : $tertiary-color;
+}
+@keyframes greenbloc
+{
+  0%
+  {
+    transform : scaleX(0);
+  }
+  100%
+  {
+    transform : scaleX(1);
   }
 }
