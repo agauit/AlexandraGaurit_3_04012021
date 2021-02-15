@@ -66,9 +66,6 @@ li{
 {
   background-color: $fourth-color;
   position: relative;
-  z-index: 1;
-  top: -61px;
-  left: 0px;
   border-radius: 47px;
   @include tablette
   {
@@ -78,22 +75,23 @@ li{
 
 .boite
 {
- 
   background-color: white;
   border-radius: 20px;
-  padding-left: 10px;
+  padding-left: 5px;
   margin-left: 5%;
   padding-top: 5px;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding-top: 0px;
-  width: 85%;
   height: 90px;
-  justify-content: space-between;
   margin-bottom: 20px;
+  justify-content: space-between;
   animation : 1.5s part ease-in-out;
-
+  @include mobile
+  {
+    width: 85%;
+  }
   @include tablette{
     margin-left: 6%;
     padding-right: 2%;
@@ -116,8 +114,13 @@ li{
     animation : 3s part ease-in-out;
   }
   &__menu
-  {
-    text-overflow: ellipsis;
+  {  
+    line-height: 18px;
+    padding-right: 15px;
+    padding-left: 10px;  
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
     @include mobile
     {
     line-height: 18px;
@@ -127,6 +130,8 @@ li{
   }
   &__prix
   {
+    padding-top: 42px;
+    padding-right: 20px;
     @include mobile
     {
     margin: 0;
@@ -134,12 +139,64 @@ li{
     padding-right: 20px;
     }
   }
-
+&__verte
+{
+  position: absolute;
+  width: 24%;
+ height: 90px;
+ border-radius : 20px;
+ background: #99e2d0;
+ z-index: -1;
+ display: flex;
+ flex-direction: row;
+ justify-content: right;
+ align-items: center;
 }
-.boite__prix:hover{
- margin-right : 5%;
 }
 
+.boite:hover
+{
+  width: 80%;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+ }
+//  .boite:hover .fa-check-circle
+//  {
+//   font-size: 30px;
+//   color: white;
+//   animation: 1s cercle ease-in-out;
+//   transform-origin: center;
+//  }
+
+//  @keyframes cercle
+// {
+//   from{
+    
+//     transform: rotate(0deg);
+//   }
+//   to{
+    
+//     transform: rotate(360deg);
+//   }
+// }
+
+// .boite:hover .boite__vert--container
+// {
+//     margin-right: 6%;
+//     animation: 1s decalage ease-in-out;
+// }
+
+// @keyframes decalage
+// {
+//   from 
+//   {
+//     transform : translateX(10px);
+//   }
+//   to
+//   {
+//     transform: translateX(0);
+//   }
+// }
 @keyframes part
 {
   0%
@@ -151,7 +208,7 @@ li{
   }
    100%
     {
-      transform: translateY(0);
+      transform: translateY(0px);
       opacity: 1;
       
 
@@ -161,6 +218,7 @@ main
 {
   background-color: $fourth-color;
   border-radius: 20px;
+
 }
 .titre1
 {
@@ -301,51 +359,7 @@ height : 50px;
 }
 }
 
-.valid
-{
-  background-color: $tertiary-color;
-  width: 10px;
-  height: 10px;
-}
-valid:hover
-{
-  animation : 2s validation ease-in-out;
-}
 
-@keyframes validation 
-{
-  0%
-  {
-  opacity: 0;
-  transform : scaleX(0);
-  }
-  100%
-  {
-    opacity:1;
-    transform:scaleX(1);
-}
-}
-.animation-right
-{
 
-  width: 22%;
-  margin-right: -13px;
-  height: 93px;
-  
-}
-.animation-right:hover
-{
-  animation : 2s greenbloc ease-in-out;
-  background-color : $tertiary-color;
-}
-@keyframes greenbloc
-{
-  0%
-  {
-    transform : scaleX(0);
-  }
-  100%
-  {
-    transform : scaleX(1);
-  }
-}
+
+

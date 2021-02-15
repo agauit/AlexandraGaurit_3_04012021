@@ -99,25 +99,47 @@ input
 }
 .animation-container:hover .little-heart
 {
+    @include ordi
+    {
     animation : .5s coeur ease-in-out;
     background:-webkit-linear-gradient($primary-color, $secondary-color);
     background-clip:text;
     -webkit-background-clip:text;
     color:transparent;
     font-weight: bold;
+    }
+}
+.animation-container:active .little-heart
+{
+    @include mobile
+    {
+        animation : .5s coeur ease-in-out;
+        background:-webkit-linear-gradient($primary-color, $secondary-color);
+        background-clip:text;
+        -webkit-background-clip:text;
+        color:transparent;
+        font-weight: bold;
+    }
+    @include tablette
+    {
+        animation : .5s coeur ease-in-out;
+        background:-webkit-linear-gradient($primary-color, $secondary-color);
+        background-clip:text;
+        -webkit-background-clip:text;
+        color:transparent;
+        font-weight: bold;
+    }
 }
 
 @keyframes coeur
 {
     0%
     {
-       transform: scale(0);
        transform:translateY(15px);
        opacity : 0;
     }
     100%
     {
-        transform : scale(1);
         transform:translateY(0px);
         opacity: 1;
     }
