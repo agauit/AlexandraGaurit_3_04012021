@@ -20,6 +20,30 @@
         margin-top: 10%;
     }
 }
+.form__btn:hover
+{
+    @include ordi
+    {
+    opacity:.7;
+    transition : opacity 1s;
+    box-shadow: 2px 9px 5px -4px darken($fourth-color,20%);
+    }
+}
+.form__btn:active
+{
+    @include mobile
+    {
+        opacity:.7;
+        transition : opacity 1s;
+        box-shadow: 2px 9px 5px -4px darken($fourth-color,20%);
+    }
+    @include tablette
+    {
+        opacity:.7;
+        transition : opacity 1s;
+        box-shadow: 2px 9px 5px -4px darken($fourth-color,20%);
+    }
+}
 .OhMyFood
 {
     
@@ -92,10 +116,23 @@ input
 .little-heart
 {
     position: absolute;
-    font-size: 40px;
     text-align: center;
     bottom: -38px;
     color : $fourth-color;
+    @include ordi
+    {
+        font-size: 40px;
+    }
+    @include tablette{
+        font-size: 30px;
+        top: 1px;
+    @include mobile
+    {
+        font-size: 21px;
+        top: 2px;
+        left: -18px;
+    }
+    }
 }
 .animation-container:hover .little-heart
 {
@@ -119,6 +156,8 @@ input
         -webkit-background-clip:text;
         color:transparent;
         font-weight: bold;
+        top: 2px;
+        left: -18px;
     }
     @include tablette
     {
@@ -222,6 +261,15 @@ input
     @include ordi{
         font-size: 40px;
         margin-top: 65%;
+    }
+    @include tablette
+    {
+        font-size: 30px;
+    }
+    @include mobile
+    {
+        font-size: 20px;
+        right: 0;
     }
 
 }
