@@ -29,7 +29,7 @@
     box-shadow: 2px 9px 5px -4px darken($fourth-color,20%);
     }
 }
-.form__btn:active
+.form__btn:active:hover
 {
     @include mobile
     {
@@ -146,7 +146,7 @@ input
     font-weight: bold;
     }
 }
-.animation-container:active .little-heart
+.animation-container:hover .little-heart
 {
     @include mobile
     {

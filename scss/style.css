@@ -91,14 +91,14 @@ p {
 }
 
 @media screen and (max-width: 767px) {
-  .form__btn:active {
+  .form__btn:active:hover {
     opacity: 0.7;
     transition: opacity 1s;
     box-shadow: 2px 9px 5px -4px #bfbfbf;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .form__btn:active {
+  .form__btn:active:hover {
     opacity: 0.7;
     transition: opacity 1s;
     box-shadow: 2px 9px 5px -4px #bfbfbf;
@@ -211,7 +211,7 @@ input {
 }
 
 @media screen and (max-width: 767px) {
-  .animation-container:active .little-heart {
+  .animation-container:hover .little-heart {
     animation: 0.5s coeur ease-in-out;
     background: -webkit-linear-gradient(#9356DC, #FF79DA);
     background-clip: text;
@@ -223,7 +223,7 @@ input {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .animation-container:active .little-heart {
+  .animation-container:hover .little-heart {
     animation: 0.5s coeur ease-in-out;
     background: -webkit-linear-gradient(#9356DC, #FF79DA);
     background-clip: text;
