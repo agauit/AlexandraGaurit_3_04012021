@@ -691,8 +691,8 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-  margin-bottom: 10px;
+  margin-bottom: 3%;
+  justify-content: center;
 }
 .menu__number {
   margin-left: 10px;
@@ -704,23 +704,33 @@ main {
   color: white;
   font-family: "Roboto";
   margin-right: 0px;
-  position: absolute;
-  left: 23px;
+  z-index: 1;
 }
 .menu__number--text {
   padding-top: 6px;
   margin: 0;
 }
 .menu__conteneur {
+  margin-left: -2%;
   background-color: #F2F2F2;
   display: flex;
   align-items: center;
-  margin-left: 35px;
   padding-left: 20px;
   padding-right: 50px;
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 20px;
+  width: 50%;
+}
+@media screen and (min-width: 1025px) and (max-width: 1650px) {
+  .menu__conteneur {
+    margin-left: -1%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu__conteneur {
+    margin-left: -1%;
+  }
 }
 .menu__icone {
   padding-right: 10px;
