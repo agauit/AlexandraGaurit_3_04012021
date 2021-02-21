@@ -1,3 +1,4 @@
+
 $primary-color : #9356DC; 
 $secondary-color : #FF79DA; 
 $tertiary-color : #99E2D0; 
@@ -64,18 +65,16 @@ $breakpoint :
         @content;
     }
 }
-
-
-@mixin background
+ 
+@mixin color-adapt($color)
 {
-@if  (background-color :  #232623)
-{
-    color : white;
+    
+    @if ( lightness($color) < 25%) 
+    {
+     color: lighten($color, 80%);
+    }
+    @else
+    {
+      color: darken($color, 100%);
+    }
 }
-@else
-{
-    color : black; 
-}
-}
-
-

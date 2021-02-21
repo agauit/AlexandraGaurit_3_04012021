@@ -182,7 +182,7 @@ input {
 }
 @media screen and (min-width: 1025px) and (max-width: 1650px) {
   .little-heart {
-    font-size: 40px;
+    font-size: 38px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -329,6 +329,51 @@ input {
   }
 }
 
+.fa-utensils {
+  color: #f0f1f0;
+  margin-right: 11px;
+  font-weight: bold;
+}
+
+.fa-hands-helping {
+  color: #f0f1f0;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.fa-check-circle {
+  color: white;
+  font-size: 28px;
+}
+
+.boite:hover .fa-check-circle {
+  font-size: 30px;
+  color: white;
+  animation: 1s cercle ease-in-out;
+  transform-origin: center;
+  margin-right: 26px;
+}
+
+@keyframes cercle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.boite:hover .boite__vert--container {
+  animation: 1s decalage ease-in-out;
+}
+
+@keyframes decalage {
+  from {
+    transform: translateX(10px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 .header {
   background-color: white;
   display: flex;
@@ -371,6 +416,10 @@ footer {
   padding-bottom: 10px;
 }
 
+footer a {
+  color: #f0f1f0;
+}
+
 li {
   display: flex;
   flex-direction: row;
@@ -383,37 +432,31 @@ nav ul {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 .section {
   background-color: #F2F2F2;
   position: relative;
   border-radius: 47px;
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .section {
-    border-radius: 100px;
-  }
+  top: -50px;
 }
 
 .boite {
   background-color: white;
   border-radius: 20px;
-  padding-left: 5px;
   margin-left: 5%;
-  padding-top: 5px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   padding-top: 0px;
   height: 90px;
   margin-bottom: 20px;
-  justify-content: space-between;
-  animation: 1.5s part ease-in-out;
+  position: relative;
+  overflow: hidden;
+  padding-left: 3%;
 }
 @media screen and (max-width: 767px) {
   .boite {
-    width: 85%;
+    width: 255px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -424,12 +467,13 @@ a {
 }
 @media screen and (min-width: 1025px) and (max-width: 1650px) {
   .boite {
-    width: 100%;
+    width: 300px;
     padding-right: 5%;
   }
 }
 .boite__1 {
   animation: 2s part ease-in-out;
+  overflow: hidden;
 }
 .boite__2 {
   animation: 2.5s part ease-in-out;
@@ -439,11 +483,8 @@ a {
 }
 .boite__menu {
   line-height: 18px;
-  padding-right: 15px;
-  padding-left: 10px;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  flex: 1;
 }
 @media screen and (max-width: 767px) {
   .boite__menu {
@@ -453,8 +494,10 @@ a {
   }
 }
 .boite__prix {
-  padding-top: 42px;
-  padding-right: 20px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (max-width: 767px) {
   .boite__prix {
@@ -465,23 +508,62 @@ a {
 }
 .boite__verte {
   position: absolute;
-  width: 24%;
+  width: 85px;
   height: 90px;
-  border-radius: 20px;
-  background: #99e2d0;
-  z-index: -1;
+  background: #99E2D0;
   display: flex;
   flex-direction: row;
   justify-content: right;
   align-items: center;
+  right: -85px;
 }
 
-.boite:hover {
-  width: 80%;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
+.boite:hover .boite__verte {
+  animation: transform 300ms ease-in-out;
+  transform: translateX(-85px);
+  transition: 1s;
 }
 
+.boite:hover .boite__prix {
+  animation: 1s decal-gauche ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.boite:hover .boite__menu {
+  width: 63%;
+}
+
+.text-elipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 99%;
+}
+
+@keyframes decal-gauche {
+  from {
+    padding-right: 0px;
+  }
+  to {
+    padding-right: 85px;
+  }
+}
+@keyframes cercle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes decalage {
+  from {
+    transform: translateX(10px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 @keyframes part {
   0% {
     transform: translateY(20px);
@@ -550,6 +632,11 @@ main {
   display: flex;
   flex-direction: column;
 }
+.text-bold {
+  font-weight: bold;
+  color: white;
+}
+
 .en-tete {
   border-bottom: 3px solid #d9d9d9;
   text-align: center;
@@ -818,6 +905,21 @@ main {
   100% {
     transform: rotate(360deg);
     opacity: 0;
+  }
+}
+.indexHeart {
+  top: -19px;
+  bottom: 0px;
+}
+
+.indexLittleHeart {
+  bottom: -21px;
+  top: -17px;
+}
+@media screen and (max-width: 767px) {
+  .indexLittleHeart {
+    left: -18px;
+    top: -17px;
   }
 }
 

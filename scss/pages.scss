@@ -312,3 +312,18 @@ height : 50px;
   opacity: 0;
 }
 }
+.indexHeart
+{
+    top: -19px;
+    bottom: 0px;
+}
+.indexLittleHeart
+{
+    bottom: -21px;
+    top: -17px;
+    @include mobile
+    {
+        left: -18px;
+        top: -17px;
+    }
+}

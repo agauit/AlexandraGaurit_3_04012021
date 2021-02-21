@@ -41,10 +41,15 @@
 
   footer
   {
+    
     background-color: #232623;
     line-height: 0px;
     padding-bottom: 10px;
     
+  }
+  footer a 
+  {
+    @include color-adapt(#232623);
   }
 
 li{
@@ -60,6 +65,7 @@ li{
   }
   a{
     text-decoration: none;
+    @include color-adapt(white);
   }
 
 .section
@@ -67,30 +73,24 @@ li{
   background-color: $fourth-color;
   position: relative;
   border-radius: 47px;
-  @include tablette
-  {
-    border-radius: 100px;
-  }
+  top: -50px;
 }
 
 .boite
 {
   background-color: white;
   border-radius: 20px;
-  padding-left: 5px;
   margin-left: 5%;
-  padding-top: 5px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   padding-top: 0px;
   height: 90px;
   margin-bottom: 20px;
-  justify-content: space-between;
-  animation : 1.5s part ease-in-out;
+  position : relative;
+  overflow: hidden;
+  padding-left: 3%;
   @include mobile
   {
-    width: 85%;
+    width: 255px;
   }
   @include tablette{
     margin-left: 6%;
@@ -98,12 +98,13 @@ li{
   }
   @include ordi
   {
-    width: 100%;
+    width: 300px;
     padding-right: 5%;
   }
   &__1
   {
     animation : 2s part ease-in-out;
+    overflow: hidden;
   }
   &__2
   {
@@ -115,12 +116,9 @@ li{
   }
   &__menu
   {  
-    line-height: 18px;
-    padding-right: 15px;
-    padding-left: 10px;  
+    line-height: 18px; 
     white-space:nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis; 
+    flex: 1;
     @include mobile
     {
     line-height: 18px;
@@ -130,8 +128,11 @@ li{
   }
   &__prix
   {
-    padding-top: 42px;
-    padding-right: 20px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
     @include mobile
     {
     margin: 0;
@@ -142,77 +143,89 @@ li{
 &__verte
 {
   position: absolute;
-  width: 24%;
+  width: 85px;
  height: 90px;
- border-radius : 20px;
- background: #99e2d0;
- z-index: -1;
+ background: $tertiary-color;
  display: flex;
  flex-direction: row;
  justify-content: right;
  align-items: center;
-}
-}
+ right: -85px;
 
-.boite:hover
+}
+}
+.boite:hover .boite__verte
 {
-  width: 80%;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
- }
-//  .boite:hover .fa-check-circle
-//  {
-//   font-size: 30px;
-//   color: white;
-//   animation: 1s cercle ease-in-out;
-//   transform-origin: center;
-//  }
+  animation: transform 300ms ease-in-out;
+  transform: translateX(-85px);
+  transition: 1s;
 
-//  @keyframes cercle
-// {
-//   from{
+}
+.boite:hover .boite__prix
+{
+  animation: 1s decal-gauche ease-in-out;
+  animation-fill-mode: forwards;
+}
+.boite:hover .boite__menu
+{
+  width: 63%;
+}
+.text-elipsis
+{
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+width: 99%;
+}
+
+@keyframes decal-gauche
+{
+  from
+  {
+    padding-right: 0px;
+  }
+  to
+  {
+    padding-right: 85px;
+  }
+}
+
+ @keyframes cercle
+{
+  from{
     
-//     transform: rotate(0deg);
-//   }
-//   to{
+    transform: rotate(0deg);
+  }
+  to{
     
-//     transform: rotate(360deg);
-//   }
-// }
+    transform: rotate(360deg);
+  }
+}
 
-// .boite:hover .boite__vert--container
-// {
-//     margin-right: 6%;
-//     animation: 1s decalage ease-in-out;
-// }
 
-// @keyframes decalage
-// {
-//   from 
-//   {
-//     transform : translateX(10px);
-//   }
-//   to
-//   {
-//     transform: translateX(0);
-//   }
-// }
+@keyframes decalage
+{
+  from 
+  {
+    transform : translateX(10px);
+  }
+  to
+  {
+    transform: translateX(0);
+  }
+}
 @keyframes part
 {
   0%
   {
     transform : translateY(20px);
-    opacity: 0;
-    
-    
+    opacity: 0; 
   }
-   100%
-    {
-      transform: translateY(0px);
-      opacity: 1;
-      
-
-    }
+  100%
+  {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 main
 {
@@ -270,8 +283,11 @@ main
   flex-direction: column;
  
 }
-
-
+.text-bold
+{
+  font-weight: bold;
+  color : lighten(white, 10%);
+}
 
 
 

@@ -121,7 +121,7 @@ input
     color : $fourth-color;
     @include ordi
     {
-        font-size: 40px;
+        font-size: 38px;
     }
     @include tablette{
         font-size: 30px;
@@ -273,7 +273,56 @@ input
     }
 
 }
+.fa-utensils 
+{
+    @include color-adapt(#232623);
+    margin-right: 11px;
+    font-weight: bold;
+}
+.fa-hands-helping
+{
+    @include color-adapt(#232623);
+    margin-right: 5px;
+    font-weight: bold;
+}
+.fa-check-circle
+{
+    color: white;
+    font-size: 28px;
+}
+.boite:hover .fa-check-circle
+{
+ font-size: 30px;
+ color: white;
+ animation: 1s cercle ease-in-out;
+ transform-origin: center;
+ margin-right: 26px;
+}
+@keyframes cercle
+{
+ from{
+   
+   transform: rotate(0deg);
+ }
+ to{
+   
+   transform: rotate(360deg);
+ }
+}
 
+.boite:hover .boite__vert--container
+{
+   animation: 1s decalage ease-in-out;
+}
 
-
-
+@keyframes decalage
+{
+ from 
+ {
+   transform : translateX(10px);
+ }
+ to
+ {
+   transform: translateX(0);
+ }
+}
