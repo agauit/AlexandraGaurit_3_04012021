@@ -104,7 +104,6 @@ li{
   &__1
   {
     animation : 2s part ease-in-out;
-    overflow: hidden;
   }
   &__2
   {
@@ -121,9 +120,7 @@ li{
     flex: 1;
     @include mobile
     {
-    line-height: 18px;
-    padding-right: 15px;
-    padding-left: 10px;
+      width: 78%;
     }
   }
   &__prix
@@ -136,8 +133,6 @@ li{
     @include mobile
     {
     margin: 0;
-    padding-top: 42px;
-    padding-right: 20px;
     }
   }
 &__verte
@@ -151,6 +146,10 @@ li{
  justify-content: right;
  align-items: center;
  right: -85px;
+ @include mobile
+ {
+  width: 65px;
+ }
 
 }
 }
