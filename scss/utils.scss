@@ -24,6 +24,11 @@ $fourth-color : #F2F2F2;
     width: 30%;
     margin-left: 35%;
     margin-bottom: 7%;
+    @include mobile
+    {
+        height: 50px;
+        width: 36%;
+    }
 }
 @mixin titre2
 {

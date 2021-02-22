@@ -321,9 +321,32 @@ height : 50px;
 {
     bottom: -21px;
     top: -17px;
+    position: absolute;
+    text-align: center;
+    color : $fourth-color;
     @include mobile
     {
-        left: -18px;
-        top: -17px;
+        top: -19px;
+        right: 1px;
+        font-size: 18px;
     }
+    @include tablette{
+        font-size: 28px;
+        right: -29px;
+        bottom: -22px;
+    }
+    @include ordi{
+        font-size: 38px;
+    }
+}
+.animation-container:hover .indexLittleHeart
+{
+
+    animation : .5s coeur ease-in-out;
+    background:-webkit-linear-gradient($primary-color, $secondary-color);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+    font-weight: bold;
+
 }

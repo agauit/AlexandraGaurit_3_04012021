@@ -28,9 +28,6 @@
     transition : opacity 1s;
     box-shadow: 2px 9px 5px -4px darken($fourth-color,20%);
     }
-}
-.form__btn:active:hover
-{
     @include mobile
     {
         opacity:.7;
@@ -44,6 +41,9 @@
         box-shadow: 2px 9px 5px -4px darken($fourth-color,20%);
     }
 }
+
+
+
 .OhMyFood
 {
     
@@ -145,9 +145,6 @@ input
     color:transparent;
     font-weight: bold;
     }
-}
-.animation-container:hover .little-heart
-{
     @include mobile
     {
         animation : .5s coeur ease-in-out;
@@ -168,7 +165,10 @@ input
         color:transparent;
         font-weight: bold;
     }
+
 }
+
+
 
 @keyframes coeur
 {
@@ -329,4 +329,8 @@ input
  {
    transform: translateX(0);
  }
+}
+.fa-store
+{
+    color : $primary-color; 
 }
