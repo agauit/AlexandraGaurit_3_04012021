@@ -274,6 +274,11 @@ main
     flex-direction: column;
     margin-right: 0;
   }
+  @include tablette
+  {
+    display: flex;
+    flex-direction: column;
+  }
 
 }
 .box-flex

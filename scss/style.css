@@ -195,7 +195,7 @@ input {
   .little-heart {
     font-size: 21px;
     top: 2px;
-    left: -18px;
+    left: -19px;
   }
 }
 
@@ -627,6 +627,12 @@ main {
     margin-right: 0;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .box-column {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .box-flex {
   display: flex;
@@ -833,7 +839,7 @@ main {
   .load {
     margin-left: -12%;
     padding-left: 30%;
-    margin-top: 100%;
+    margin-top: 70%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -879,7 +885,7 @@ main {
 }
 @media screen and (max-width: 767px) {
   .index {
-    margin-top: -110%;
+    margin-top: -86%;
   }
 }
 
