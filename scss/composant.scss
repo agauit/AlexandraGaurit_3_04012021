@@ -51,10 +51,9 @@
 
     color : white;
     margin: 0;
-    padding-left: 30px;
+    padding-left: 7%;
     font-size: 15px;
-    padding-top: 30px;
-    padding-bottom: 15px;
+    padding-bottom: 3%;
     @include tablette
     {
         font-size: 25px;
@@ -65,8 +64,13 @@
         font-size: 30px;
         padding-top: 4%;
         padding-bottom: 2%;
+        padding-left: 5%;
     }
-
+    @include mobile
+    {
+    padding-top: 25px;
+    padding-bottom: 17px;
+    }
 }
 input
 {
@@ -200,22 +204,6 @@ input
     margin-right: 7px;
     }
 }
-.nouveau
-{
-    
-    position: absolute;
-    width: 30%;
-    height: 44px;
-    background-color: $tertiary-color;
-    color : darken($tertiary-color, 40%);
-    border-radius: 5px;
-    top: 5%;
-    left: 66%;
-    text-align: center;
-  
-
-}
-
 .fa-arrow-left
 {
     @include mobile
@@ -288,7 +276,7 @@ input
 .fa-check-circle
 {
     color: white;
-    font-size: 28px; 
+    font-size: 28px;
 }
 
 .boite:hover .fa-check-circle
@@ -296,7 +284,6 @@ input
  font-size: 30px;
  color: white;
  animation: 1s cercle ease-in-out;
- transform-origin: center;
 }
 @keyframes cercle
 {
@@ -312,21 +299,15 @@ input
 
 .boite:hover .boite__vert--container
 {
-    @include ordi{
    animation: 1s decalage ease-in-out;
    animation-fill-mode: forwards;
-    }
-    @include tablette{
-    animation: 1s decalage ease-in-out;
-   animation-fill-mode: forwards;
-    }
-}
-.boite:hover .boite__vert--container
-{
-    @include mobile{
-    animation: 1s decalage-mobile ease-in-out;
-   animation-fill-mode: forwards;
-    }
+   display: flex;
+   justify-content: center;
+   padding-top: 33%;
+   @include mobile 
+   {
+    padding-top: 41%;
+   }
 }
 
 @keyframes decalage
@@ -337,7 +318,7 @@ input
  }
  to
  {
-   transform: translateX(-22px);
+   transform: translateX(0px);
  }
 }
 @keyframes decalage-mobile
@@ -348,7 +329,7 @@ input
  }
  to
  {
-   transform: translateX(-17px);
+   transform: translateX(0px);
  }
 }
 .fa-store
