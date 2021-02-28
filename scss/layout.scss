@@ -138,7 +138,7 @@ li{
 &__verte
 {
   position: absolute;
-  width: 85px;
+  width: 80px;
  height: 90px;
  background: $tertiary-color;
  display: flex;
@@ -148,7 +148,7 @@ li{
  right: -85px;
  @include mobile
  {
-  width: 65px;
+  width: 70px;
  }
 
 }
@@ -201,18 +201,6 @@ width: 99%;
   }
 }
 
-
-@keyframes decalage
-{
-  from 
-  {
-    transform : translateX(10px);
-  }
-  to
-  {
-    transform: translateX(0);
-  }
-}
 @keyframes part
 {
   0%

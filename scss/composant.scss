@@ -117,21 +117,23 @@ input
 {
     position: absolute;
     text-align: center;
-    bottom: -38px;
     color : $fourth-color;
-    @include ordi
-    {
-        font-size: 38px;
-    }
-    @include tablette{
-        font-size: 30px;
-        top: 1px;
     @include mobile
     {
         top: 0px;
         font-size: 19px;
-        left: -19px;
+        right: 0px;
+        bottom: -23px;
     }
+    @include ordi
+    {
+        font-size: 37px;
+        right: -38px;
+    }
+    @include tablette{
+        font-size: 28px;
+        top: 1px;
+        right: -29px; 
 }
 }
 .animation-container:hover .little-heart
@@ -153,8 +155,6 @@ input
         -webkit-background-clip:text;
         color:transparent;
         font-weight: bold;
-        top: 2px;
-        left: -18px;
     }
     @include tablette
     {
@@ -290,17 +290,13 @@ input
     color: white;
     font-size: 28px; 
 }
+
 .boite:hover .fa-check-circle
 {
  font-size: 30px;
  color: white;
  animation: 1s cercle ease-in-out;
  transform-origin: center;
- margin-right: 26px;
- @include mobile
- {
-    margin-right: 20px;
- }
 }
 @keyframes cercle
 {
@@ -316,7 +312,21 @@ input
 
 .boite:hover .boite__vert--container
 {
+    @include ordi{
    animation: 1s decalage ease-in-out;
+   animation-fill-mode: forwards;
+    }
+    @include tablette{
+        animation: 1s decalage ease-in-out;
+   animation-fill-mode: forwards;
+    }
+}
+.boite:hover .boite__vert--container
+{
+    @include mobile{
+    animation: 1s decalage-mobile ease-in-out;
+   animation-fill-mode: forwards;
+    }
 }
 
 @keyframes decalage
@@ -327,7 +337,18 @@ input
  }
  to
  {
-   transform: translateX(0);
+   transform: translateX(-22px);
+ }
+}
+@keyframes decalage-mobile
+{
+ from 
+ {
+   transform : translateX(10px);
+ }
+ to
+ {
+   transform: translateX(-18px);
  }
 }
 .fa-store
