@@ -398,7 +398,7 @@ input {
     transform: translateX(10px);
   }
   to {
-    transform: translateX(-18px);
+    transform: translateX(-17px);
   }
 }
 .fa-store {
@@ -577,14 +577,6 @@ a {
   }
   to {
     padding-right: 85px;
-  }
-}
-@keyframes cercle {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
   }
 }
 @keyframes part {

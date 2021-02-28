@@ -317,7 +317,7 @@ input
    animation-fill-mode: forwards;
     }
     @include tablette{
-        animation: 1s decalage ease-in-out;
+    animation: 1s decalage ease-in-out;
    animation-fill-mode: forwards;
     }
 }
@@ -348,7 +348,7 @@ input
  }
  to
  {
-   transform: translateX(-18px);
+   transform: translateX(-17px);
  }
 }
 .fa-store
