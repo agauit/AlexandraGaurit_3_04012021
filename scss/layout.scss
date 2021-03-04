@@ -1,88 +1,45 @@
-.header{
+.header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-    @include ordi
-  {
+  @include ordi {
     margin-right: 20%;
     margin-top: 2%;
     margin-bottom: 2%;
   }
 
-  @include tablette
-  {
-    
+  @include tablette {
     padding-right: 16%;
     padding-top: 2%;
     padding-bottom: 2%;
   }
-  @include mobile
-  {
+
+  @include mobile {
     margin-right: 35%;
     margin-top: 3%;
     margin-bottom: 2%;
   }
 
-
   &__logo {
-    @include mobile
-    {
-    width: 150px;
-    margin-left: 26%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    @include mobile {
+      width: 150px;
+      margin-left: 26%;
+      margin-top: 5%;
+      margin-bottom: 5%;
     }
-
+  }
 }
-}
 
-  footer
-  {
-    
-    background-color: #232623;
-    line-height: 0px;
-    padding-bottom: 10px;
-    
-  }
-  footer a 
-  {
-    @include color-adapt(#232623);
-  }
-
-li{
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  line-height: 28px;
-  padding-left: 7%;
-  @include ordi{
-    padding-left : 5%;
-  }
-
-}
-  nav ul{
-    list-style: none;
-    
-  }
-  a{
-    text-decoration: none;
-    @include color-adapt(white);
-  }
-
-.section
-{
+.section {
   background-color: $fourth-color;
   position: relative;
   border-radius: 47px;
   top: -50px;
 }
 
-.boite
-{
+.boite {
   background-color: white;
   border-radius: 20px;
   margin-left: 5%;
@@ -90,203 +47,189 @@ li{
   padding-top: 0px;
   height: 90px;
   margin-bottom: 20px;
-  position : relative;
+  position: relative;
   overflow: hidden;
   padding-left: 3%;
-  @include mobile
-  {
+
+  @include mobile {
     width: 88%;
   }
-  @include tablette{
+
+  @include tablette {
     margin-left: 6%;
     padding-right: 2%;
   }
-  @include ordi
-  {
+
+  @include ordi {
     width: 300px;
     padding-right: 5%;
   }
-  &__1
-  {
-    animation : 2s part ease-in-out;
+
+  &__1 {
+    animation: 2s part ease-in-out;
   }
-  &__2
-  {
-    animation : 2.5s part ease-in-out;
+
+  &__2 {
+    animation: 2.5s part ease-in-out;
   }
-  &__3
-  {
-    animation : 3s part ease-in-out;
+
+  &__3 {
+    animation: 3s part ease-in-out;
   }
-  &__menu
-  {  
+
+  &__menu {
     white-space: nowrap;
     flex: 1;
- 
-    @include mobile
-    {
+
+    @include mobile {
       width: 78%;
       padding-top: 20px;
       line-height: 24px;
     }
-    @include ordi{
+
+    @include ordi {
       line-height: 28px;
       padding-top: 5%;
     }
-    @include tablette
-    {
+
+    @include tablette {
       padding-top: 19px;
       line-height: 25px;
     }
   }
-  &__prix
-  {
+
+  &__prix {
     width: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
- 
-    @include mobile
-    {
-    margin: 0;
+
+    @include mobile {
+      margin: 0;
     }
   }
-&__verte
-{
-  position: absolute;
-  width: 80px;
- height: 90px;
- background: $tertiary-color;
-//  display: flex;
-//  flex-direction: row;
-//  justify-content: right;
-//  align-items: center;
- right: -85px;
- @include mobile
- {
-  width: 70px;
- }
 
+  &__verte {
+    position: absolute;
+    width: 80px;
+    height: 90px;
+    background: $tertiary-color;
+    right: -85px;
+
+    @include mobile {
+      width: 70px;
+    }
+
+  }
 }
-}
-.boite:hover .boite__verte
-{
+
+.boite:hover .boite__verte {
   animation: transform 300ms ease-in-out;
   transform: translateX(-85px);
   transition: 1s;
 
 }
-.boite:hover .boite__prix
-{
+
+.boite:hover .boite__prix {
   animation: 1s decal-gauche ease-in-out;
   animation-fill-mode: forwards;
 }
-.boite:hover .boite__menu
-{
+
+.boite:hover .boite__menu {
   width: 63%;
 }
-.text-elipsis
-{
-overflow: hidden;
-text-overflow: ellipsis;
-white-space: nowrap;
-width: 99%;
+
+.text-elipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 99%;
 }
 
-@keyframes decal-gauche
-{
-  from
-  {
+@keyframes decal-gauche {
+  from {
     padding-right: 0px;
   }
-  to
-  {
+
+  to {
     padding-right: 85px;
   }
 }
 
-@keyframes part
-{
-  0%
-  {
-    transform : translateY(20px);
-    opacity: 0; 
+@keyframes part {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
   }
-  100%
-  {
+
+  100% {
     transform: translateY(0px);
     opacity: 1;
   }
 }
-main
-{
+
+main {
   background-color: $fourth-color;
   border-radius: 20px;
-
 }
-.titre1
-{
- 
+
+.titre1 {
   display: flex;
-  align-items : center;
+  align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
   padding-bottom: 35px;
-
 }
-.titre2
-{
+
+.titre2 {
   @include titre2;
-  margin : 0;
+  margin: 0;
   margin-top: 5%;
   margin-left: 10%;
   margin-bottom: 5%;
 }
-.groupe
-{
+
+.groupe {
   display: flex;
   flex-direction: row;
-  @include mobile{
+
+  @include mobile {
     flex-direction: column;
   }
-  @include tablette{
+
+  @include tablette {
     flex-direction: column;
   }
 }
-.box-column
-{
+
+.box-column {
   @include ordi;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin-right: 4%;
-  @include mobile
-  {
+
+  @include mobile {
     display: flex;
     flex-direction: column;
     margin-right: 0;
   }
-  @include tablette
-  {
+
+  @include tablette {
     display: flex;
     flex-direction: column;
   }
 
 }
-.box-flex
-{
+
+.box-flex {
   @include ordi;
   display: flex;
   flex-direction: column;
- 
+
 }
-.text-bold
-{
+
+.text-bold {
   font-weight: bold;
-  color : lighten(white, 10%);
+  color: lighten(white, 10%);
 }
-
-
-
-
-

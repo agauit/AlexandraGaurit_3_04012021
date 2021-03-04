@@ -1,85 +1,74 @@
-
-$primary-color : #9356DC; 
-$secondary-color : #FF79DA; 
-$tertiary-color : #99E2D0; 
-$fourth-color : #F2F2F2; 
+$primary-color : #9356DC;
+$secondary-color : #FF79DA;
+$tertiary-color : #99E2D0;
+$fourth-color : #F2F2F2;
 
 @mixin font-roboto {
     font-family: "Roboto";
-  }
-@mixin title
-{
+}
+
+@mixin title {
     font-family: "Shrikhand";
 }
-@mixin btn 
-{
-    background: linear-gradient( $secondary-color ,$primary-color);
+
+@mixin btn {
+    background: linear-gradient($secondary-color, $primary-color);
     border-radius: 20px;
     height: 45px;
     color: white;
-    @include font-roboto; 
+    @include font-roboto;
     border: none;
-    box-shadow: 2px 9px 5px -4px darken($fourth-color,10%);
-    margin-top: 5%; 
+    box-shadow: 2px 9px 5px -4px darken($fourth-color, 10%);
+    margin-top: 5%;
     width: 30%;
     margin-left: 35%;
     margin-bottom: 7%;
-    @include mobile
-    {
+
+    @include mobile {
         height: 50px;
         width: 36%;
     }
 }
-@mixin titre2
-{
+
+@mixin titre2 {
     padding-right: 0px;
     width: 48px;
     margin-top: 10%;
     padding-top: 0%;
     padding-bottom: 1%;
-    border-bottom : 3px solid $tertiary-color;
+    border-bottom: 3px solid $tertiary-color;
 }
 
-$breakpoint :
-(
-    mobile : 767px,
+$breakpoint : (mobile : 767px,
     tablet : 1024px,
     desktop : 1650px,
 );
 
-@mixin mobile 
-{
-    @media screen and (max-width: map-get($breakpoint, mobile))
-    {
+@mixin mobile {
+    @media screen and (max-width: map-get($breakpoint, mobile)) {
         @content;
     }
 }
 
-@mixin tablette 
-{
-    @media screen and (min-width:768px) and (max-width: map-get($breakpoint, tablet))
-    {
+@mixin tablette {
+    @media screen and (min-width:768px) and (max-width: map-get($breakpoint, tablet)) {
         @content;
     }
 }
 
-@mixin ordi 
-{
-    @media screen and (min-width: 1025px) and (max-width: map-get($breakpoint, desktop))
-    {
+@mixin ordi {
+    @media screen and (min-width: 1025px) and (max-width: map-get($breakpoint, desktop)) {
         @content;
     }
 }
- 
-@mixin color-adapt($color)
-{
-    
-    @if ( lightness($color) < 25%) 
-    {
-     color: lighten($color, 80%);
+
+@mixin color-adapt($color) {
+
+    @if (lightness($color) < 25%) {
+        color: lighten($color, 80%);
     }
-    @else
-    {
-      color: darken($color, 100%);
+
+    @else {
+        color: darken($color, 100%);
     }
 }

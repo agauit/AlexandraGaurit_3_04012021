@@ -1,9 +1,7 @@
-.form__btn
-{
-    @include btn; 
+.form__btn {
+    @include btn;
 
-    @include tablette
-    {
+    @include tablette {
         font-size: 16px;
         width: 20%;
         height: 60px;
@@ -11,8 +9,7 @@
         margin-top: 10%;
     }
 
-    @include ordi
-    {
+    @include ordi {
         font-size: 20px;
         width: 20%;
         height: 60px;
@@ -20,319 +17,305 @@
         margin-top: 10%;
     }
 }
-.form__btn:hover
-{
-    @include ordi
-    {
-    opacity:.7;
-    transition : opacity 1s;
-    box-shadow: 2px 9px 5px -4px darken($fourth-color,20%);
+
+.form__btn:hover {
+    @include ordi {
+        opacity: .7;
+        transition: opacity 1s;
+        box-shadow: 2px 9px 5px -4px darken($fourth-color, 20%);
     }
-    @include mobile
-    {
-        opacity:.7;
-        transition : opacity 1s;
-        box-shadow: 2px 9px 5px -4px darken($fourth-color,20%);
+
+    @include mobile {
+        opacity: .7;
+        transition: opacity 1s;
+        box-shadow: 2px 9px 5px -4px darken($fourth-color, 20%);
     }
-    @include tablette
-    {
-        opacity:.7;
-        transition : opacity 1s;
-        box-shadow: 2px 9px 5px -4px darken($fourth-color,20%);
+
+    @include tablette {
+        opacity: .7;
+        transition: opacity 1s;
+        box-shadow: 2px 9px 5px -4px darken($fourth-color, 20%);
     }
 }
 
+.OhMyFood {
 
-
-.OhMyFood
-{
-    
     @include title;
 
-    color : white;
+    color: white;
     margin: 0;
     padding-left: 7%;
     font-size: 15px;
     padding-bottom: 3%;
-    @include tablette
-    {
+
+    @include tablette {
         font-size: 25px;
         padding-top: 4%;
     }
-    @include ordi
-    {
+
+    @include ordi {
         font-size: 30px;
         padding-top: 4%;
         padding-bottom: 2%;
         padding-left: 5%;
     }
-    @include mobile
-    {
-    padding-top: 25px;
-    padding-bottom: 17px;
+
+    @include mobile {
+        padding-top: 25px;
+        padding-bottom: 17px;
     }
 }
-input
-{
+
+input {
 
     width: 100%;
     height: 45px;
     border: none;
-    background-color: darken($fourth-color,5%);
+    background-color: darken($fourth-color, 5%);
     text-align: center;
-    @include tablette{
+
+    @include tablette {
         height: 70px;
     }
-    @include ordi
-    {
+
+    @include ordi {
         height: 80px;
 
     }
 
 }
-.fa-map-marker-alt
-{
+
+.fa-map-marker-alt {
 
     position: absolute;
     top: 33%;
     left: 31%;
     font-size: 14px;
 
-    @include tablette
-    {
+    @include tablette {
         top: 41%;
         left: 41%;
     }
-    @include ordi 
-    {
+
+    @include ordi {
         top: 42%;
         left: 43%;
     }
 }
-.animation-container
-{
-    position : relative;
+
+.animation-container {
+    position: relative;
 }
-.coeur{
-    position : absolute; 
-    z-index : 1;
+
+.coeur {
+    position: absolute;
+    z-index: 1;
 }
-.little-heart
-{
+
+.little-heart {
     position: absolute;
     text-align: center;
-    color : $fourth-color;
-    @include mobile
-    {
+    color: $fourth-color;
+
+    @include mobile {
         top: 0px;
         font-size: 19px;
         right: 0px;
         bottom: -23px;
     }
-    @include ordi
-    {
+
+    @include ordi {
         font-size: 37px;
         right: -38px;
     }
-    @include tablette{
+
+    @include tablette {
         font-size: 28px;
         top: 1px;
-        right: -29px; 
-}
-}
-.animation-container:hover .little-heart
-{
-    @include ordi
-    {
-    animation : .5s coeur ease-in-out;
-    background:-webkit-linear-gradient($primary-color, $secondary-color);
-    background-clip:text;
-    -webkit-background-clip:text;
-    color:transparent;
-    font-weight: bold;
+        right: -29px;
     }
-    @include mobile
-    {
-        animation : .5s coeur ease-in-out;
-        background:-webkit-linear-gradient($primary-color, $secondary-color);
-        background-clip:text;
-        -webkit-background-clip:text;
-        color:transparent;
-        font-weight: bold;
-    }
-    @include tablette
-    {
-        animation : .5s coeur ease-in-out;
-        background:-webkit-linear-gradient($primary-color, $secondary-color);
-        background-clip:text;
-        -webkit-background-clip:text;
-        color:transparent;
+}
+
+.animation-container:hover .little-heart {
+    @include ordi {
+        animation: .5s coeur ease-in-out;
+        background: -webkit-linear-gradient($primary-color, $secondary-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
         font-weight: bold;
     }
 
+    @include mobile {
+        animation: .5s coeur ease-in-out;
+        background: -webkit-linear-gradient($primary-color, $secondary-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+    }
+
+    @include tablette {
+        animation: .5s coeur ease-in-out;
+        background: -webkit-linear-gradient($primary-color, $secondary-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+    }
+
 }
 
-
-
-@keyframes coeur
-{
-    0%
-    {
-       transform:translateY(15px);
-       opacity : 0;
+@keyframes coeur {
+    0% {
+        transform: translateY(15px);
+        opacity: 0;
     }
-    100%
-    {
-        transform:translateY(0px);
+
+    100% {
+        transform: translateY(0px);
         opacity: 1;
     }
 }
 
-.fa-utensils 
-{
-    @include mobile
-    {
-    color : white;
-    margin-right: 12px;
+.fa-utensils {
+    @include mobile {
+        color: white;
+        margin-right: 12px;
     }
 }
-.fa-hands-helping
-{
-    @include mobile
-    {
-    color : white;
-    margin-right: 7px;
+
+.fa-hands-helping {
+    @include mobile {
+        color: white;
+        margin-right: 7px;
     }
 }
-.fa-arrow-left
-{
-    @include mobile
-    {
-    font-size: 20px;
+
+.fa-arrow-left {
+    @include mobile {
+        font-size: 20px;
     }
-    @include tablette
-    {
+
+    @include tablette {
         font-size: 30px;
     }
-    @include ordi
-    {
+
+    @include ordi {
         font-size: 35px;
     }
 }
-.img__size
-{
-      
-    @include tablette{
+
+.img__size {
+
+    @include tablette {
         margin: 0;
         height: 500px;
         overflow: hidden;
     }
-    @include mobile
-    {
-        margin : 0;
+
+    @include mobile {
+        margin: 0;
         height: 200px;
         overflow: hidden;
     }
-    @include ordi
-    {
-        margin : 0;
+
+    @include ordi {
+        margin: 0;
         width: 100%;
         height: 700px;
-        overflow : hidden;
+        overflow: hidden;
 
     }
 }
-.coeur
-{
+
+.coeur {
 
     margin-top: 100%;
-    @include ordi{
+
+    @include ordi {
         font-size: 40px;
         margin-top: 65%;
     }
-    @include tablette
-    {
+
+    @include tablette {
         font-size: 30px;
     }
-    @include mobile
-    {
+
+    @include mobile {
         font-size: 20px;
         right: 0;
     }
 
 }
-.fa-utensils 
-{
+
+.fa-utensils {
     @include color-adapt(#232623);
     margin-right: 11px;
     font-weight: bold;
 }
-.fa-hands-helping
-{
+
+.fa-hands-helping {
     @include color-adapt(#232623);
     margin-right: 5px;
     font-weight: bold;
 }
-.fa-check-circle
-{
+
+.fa-check-circle {
     color: white;
     font-size: 28px;
 }
 
-.boite:hover .fa-check-circle
-{
- font-size: 30px;
- color: white;
- animation: 1s cercle ease-in-out;
-}
-@keyframes cercle
-{
- from{
-   
-   transform: rotate(0deg);
- }
- to{
-   
-   transform: rotate(360deg);
- }
+.boite:hover .fa-check-circle {
+    font-size: 30px;
+    color: white;
+    animation: 1s cercle ease-in-out;
 }
 
-.boite:hover .boite__vert--container
-{
-   animation: 1s decalage ease-in-out;
-   animation-fill-mode: forwards;
-   display: flex;
-   justify-content: center;
-   padding-top: 33%;
-   @include mobile 
-   {
-    padding-top: 41%;
-   }
+@keyframes cercle {
+    from {
+
+        transform: rotate(0deg);
+    }
+
+    to {
+
+        transform: rotate(360deg);
+    }
 }
 
-@keyframes decalage
-{
- from 
- {
-   transform : translateX(10px);
- }
- to
- {
-   transform: translateX(0px);
- }
+.boite:hover .boite__vert--container {
+    animation: 1s decalage ease-in-out;
+    animation-fill-mode: forwards;
+    display: flex;
+    justify-content: center;
+    padding-top: 33%;
+
+    @include mobile {
+        padding-top: 41%;
+    }
 }
-@keyframes decalage-mobile
-{
- from 
- {
-   transform : translateX(10px);
- }
- to
- {
-   transform: translateX(0px);
- }
+
+@keyframes decalage {
+    from {
+        transform: translateX(10px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
 }
-.fa-store
-{
-    color : $primary-color; 
+
+@keyframes decalage-mobile {
+    from {
+        transform: translateX(10px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.fa-store {
+    color: $primary-color;
 }
