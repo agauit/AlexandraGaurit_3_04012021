@@ -24,7 +24,7 @@ h1 {
   padding-top: 30px;
   padding-left: 22px;
 }
-@media screen and (min-width: 1025px) and (max-width: 1650px) {
+@media screen and (min-width: 1025px) and (max-width: 2650px) {
   h1 {
     font-size: 35px;
   }
@@ -67,7 +67,7 @@ li {
   line-height: 28px;
   padding-left: 7%;
 }
-@media screen and (min-width: 1025px) and (max-width: 1650px) {
+@media screen and (min-width: 1025px) and (max-width: 2650px) {
   li {
     padding-left: 5%;
   }
@@ -110,7 +110,7 @@ a {
     margin-top: 10%;
   }
 }
-@media screen and (min-width: 1025px) and (max-width: 1650px) {
+@media screen and (min-width: 1025px) and (max-width: 2650px) {
   .form__btn {
     font-size: 20px;
     width: 20%;
@@ -120,7 +120,7 @@ a {
   }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1650px) {
+@media screen and (min-width: 1025px) and (max-width: 2650px) {
   .form__btn:hover {
     opacity: 0.7;
     transition: opacity 1s;
@@ -156,7 +156,7 @@ a {
     padding-top: 4%;
   }
 }
-@media screen and (min-width: 1025px) and (max-width: 1650px) {
+@media screen and (min-width: 1025px) and (max-width: 2650px) {
   .OhMyFood {
     font-size: 30px;
     padding-top: 4%;
@@ -183,7 +183,7 @@ input {
     height: 70px;
   }
 }
-@media screen and (min-width: 1025px) and (max-width: 1650px) {
+@media screen and (min-width: 1025px) and (max-width: 2650px) {
   input {
     height: 80px;
   }
@@ -201,7 +201,7 @@ input {
     left: 41%;
   }
 }
-@media screen and (min-width: 1025px) and (max-width: 1650px) {
+@media screen and (min-width: 1025px) and (max-width: 2650px) {
   .fa-map-marker-alt {
     top: 42%;
     left: 43%;
@@ -230,7 +230,7 @@ input {
     bottom: -23px;
   }
 }
-@media screen and (min-width: 1025px) and (max-width: 1650px) {
+@media screen and (min-width: 1025px) and (max-width: 2650px) {
   .little-heart {
     font-size: 37px;
     right: -38px;
@@ -244,7 +244,7 @@ input {
   }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1650px) {
+@media screen and (min-width: 1025px) and (max-width: 2650px) {
   .animation-container:hover .little-heart {
     animation: 0.5s coeur ease-in-out;
     background: -webkit-linear-gradient(#9356DC, #FF79DA);
@@ -309,7 +309,7 @@ input {
     font-size: 30px;
   }
 }
-@media screen and (min-width: 1025px) and (max-width: 1650px) {
+@media screen and (min-width: 1025px) and (max-width: 2650px) {
   .fa-arrow-left {
     font-size: 35px;
   }
@@ -329,7 +329,7 @@ input {
     overflow: hidden;
   }
 }
-@media screen and (min-width: 1025px) and (max-width: 1650px) {
+@media screen and (min-width: 1025px) and (max-width: 2650px) {
   .img__size {
     margin: 0;
     width: 100%;
@@ -341,7 +341,7 @@ input {
 .coeur {
   margin-top: 100%;
 }
-@media screen and (min-width: 1025px) and (max-width: 1650px) {
+@media screen and (min-width: 1025px) and (max-width: 2650px) {
   .coeur {
     font-size: 40px;
     margin-top: 65%;
@@ -429,7 +429,7 @@ input {
   align-items: center;
   justify-content: space-around;
 }
-@media screen and (min-width: 1025px) and (max-width: 1650px) {
+@media screen and (min-width: 1025px) and (max-width: 2650px) {
   .header {
     margin-right: 20%;
     margin-top: 2%;
@@ -489,7 +489,7 @@ input {
     padding-right: 2%;
   }
 }
-@media screen and (min-width: 1025px) and (max-width: 1650px) {
+@media screen and (min-width: 1025px) and (max-width: 2650px) {
   .boite {
     width: 300px;
     padding-right: 5%;
@@ -515,7 +515,7 @@ input {
     line-height: 24px;
   }
 }
-@media screen and (min-width: 1025px) and (max-width: 1650px) {
+@media screen and (min-width: 1025px) and (max-width: 2650px) {
   .boite__menu {
     line-height: 28px;
     padding-top: 5%;
@@ -682,7 +682,7 @@ main {
   margin-left: 0px;
   width: 50%;
 }
-@media screen and (min-width: 1025px) and (max-width: 1650px) {
+@media screen and (min-width: 1025px) and (max-width: 2650px) {
   .logo {
     width: 30%;
     margin-top: 2%;
@@ -699,7 +699,7 @@ main {
     font-size: 30px;
   }
 }
-@media screen and (min-width: 1025px) and (max-width: 1650px) {
+@media screen and (min-width: 1025px) and (max-width: 2650px) {
   .title {
     margin-top: 4%;
     font-size: 35px;
@@ -716,7 +716,7 @@ main {
     margin-bottom: -2%;
   }
 }
-@media screen and (min-width: 1025px) and (max-width: 1650px) {
+@media screen and (min-width: 1025px) and (max-width: 2650px) {
   .paragraphe {
     font-size: 20px;
     margin-bottom: -4%;
@@ -731,7 +731,7 @@ main {
   justify-content: center;
 }
 .menu__number {
-  margin-left: 10px;
+  margin-right: 0.5%;
   width: 30px;
   height: 30px;
   background-color: #9356DC;
@@ -739,11 +739,10 @@ main {
   text-align: center;
   color: white;
   font-family: "Roboto";
-  margin-right: 0px;
   z-index: 1;
 }
 .menu__number--text {
-  padding-top: 6px;
+  padding-top: 26%;
   margin: 0;
 }
 .menu__conteneur {
@@ -759,7 +758,7 @@ main {
   width: 50%;
   height: 50px;
 }
-@media screen and (min-width: 1025px) and (max-width: 1650px) {
+@media screen and (min-width: 1025px) and (max-width: 2650px) {
   .menu__conteneur {
     margin-left: -1%;
   }
@@ -801,7 +800,7 @@ main {
   margin-right: 5%;
   margin-left: 5%;
 }
-@media screen and (min-width: 1025px) and (max-width: 1650px) {
+@media screen and (min-width: 1025px) and (max-width: 2650px) {
   .restaurant {
     width: 100%;
   }
@@ -822,7 +821,7 @@ main {
     height: 250px;
   }
 }
-@media screen and (min-width: 1025px) and (max-width: 1650px) {
+@media screen and (min-width: 1025px) and (max-width: 2650px) {
   .restaurant__img {
     width: 100%;
     height: 200px;
@@ -853,7 +852,7 @@ main {
   }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1650px) {
+@media screen and (min-width: 1025px) and (max-width: 2650px) {
   .titre-index {
     margin: 0;
     margin-top: 5%;
@@ -935,7 +934,7 @@ main {
     opacity: 0;
   }
   100% {
-    opacity: 1;
+    opacity: 0;
   }
 }
 @keyframes loading {
@@ -974,7 +973,7 @@ main {
     bottom: -22px;
   }
 }
-@media screen and (min-width: 1025px) and (max-width: 1650px) {
+@media screen and (min-width: 1025px) and (max-width: 2650px) {
   .indexLittleHeart {
     font-size: 38px;
   }
